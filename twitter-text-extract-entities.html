@@ -1,0 +1,26 @@
+<script type="text/javascript">
+  RED.nodes.registerType('twitter-text-extract-entities',{
+    category: 'function',
+    color: '#C0DEED',
+    defaults: {
+      name: { value: '' }
+    },
+    inputs:1,
+    outputs:1,
+    icon: 'twitter-text.png',
+    label: function() {
+      return this.name || 'Extract Entities';
+    }
+  });
+</script>
+
+<script type="text/x-red" data-template-name="twitter-text-extract-entities">
+  <div class="form-row">
+    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="twitter-text-extract-entities">
+  <p>Extracts known entities (urls, hashtags, username, etc.) from <code>msg.payload</code> and sets the result to <code>msg.payload</code></p>
+</script>

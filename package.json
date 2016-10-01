@@ -1,0 +1,25 @@
+{
+  "name": "node-red-contrib-twitter-text",
+  "version": "0.1.0",
+  "description": "Node-red nodes for parsing urls, hashtags, usernames, etc.",
+  "repository": "cowchimp/node-red-contrib-twitter-text",
+  "author": {
+    "name": "cowchimp",
+    "url": "http://blog.cowchimp.com"
+  },
+  "licenses": "MIT",
+  "engines": {
+    "node": ">=0.10.15"
+  },
+  "dependencies": {
+    "twitter-text": "^1.14.0"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "twitter-text-extract-entities": "twitter-text-extract-entities.js"
+    }
+  }
+}
